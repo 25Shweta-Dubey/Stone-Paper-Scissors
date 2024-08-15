@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(219, 192, 244);
+    overflow-y: auto;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    border: 8px solid rgb(134, 28, 106);
+    background-color: rgb(233, 158, 235);
+}
+
+.choices {
+    margin-top:-20rem;
+    height: 80vh;
+    padding: 10px;
+    /* margin-bottom: 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    overflow: hidden;
+}
+
+#rock,
+#paper,
+#scissor {
+    height: 25rem;
+    width: 25rem;
+    border: 2px solid red;
+    background-size: cover;
+    background-position: center;
+}
+
+#rock{
+    background-image: url('images/rock.png');
+    border: 10px solid rgb(15, 15, 15);
+    border-radius: 700px;
+}
+
+#paper {
+    background-image: url('images/paper.png');
+    border: 10px solid rgb(1, 1, 1);
+    border-radius: 2000px;
+}
+
+#scissor {
+    background-image: url('images/scissor.png');
+    border: 10px solid black;
+    border-radius: 600px;
+}
+
+#rock:hover,
+#paper:hover,
+#scissor:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#rock:active,
+#paper:active,
+#scissor:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#rock-text,
+#paper-text,
+#scissor-text {
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.btn-container {
+    margin-top: -20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50%;
+    margin-bottom: 30rem;
+}
+
+#Reset,
+#new-btn {
+    padding: 2rem;
+    font-size: 4rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#Reset {
+    color: rgb(253, 251, 251);
+    background-color: rgb(6, 16, 16);
+    border-color: rgb(165, 165, 181);
+    font-weight: 300;
+}
+
+#Reset:hover {
+    background-color: rgb(94, 91, 235);
+}
+
+#Reset:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #e01b1b;
+    transition: 0.7s;
+}
+
+#new-btn {
+    color: rgb(237, 230, 230);
+    background-color: #0a0a23;
+    font-weight: 400;
+    border: none;
+    box-shadow: 0 0 4px 4px rgb(244, 240, 240);
+}
+
+.score-board {
+    margin-top: -30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+   
+    gap: 30%;
+}
+
+#user-score,
+#computer-score {
+    font-size: 5rem;
+}
+
+.msg-container {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#msg {
+    
+    color: #141313;
+    font-size: 10rem;
+    /* padding: 1rem;
+    border-radius: 1rem; */
+}
